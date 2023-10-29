@@ -63,14 +63,14 @@ body {
   color: hsl(0, 0%, 100%);
   margin: 1rem 0;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .card__info h3:hover {
   color: hsl(178, 100%, 50%);
 }
 
-.card__info p,
-.box .clock {
+.card__info p {
   color: hsl(215, 51%, 70%);
   font-weight: lighter;
 }
@@ -95,6 +95,12 @@ body {
   margin-left: 0.5rem;
 }
 
+.box .clock {
+  color: hsl(215, 51%, 70%);
+  font-weight: lighter;
+  margin-left: 0.5rem;
+}
+
 .avatar {
   display: flex;
   align-items: center;
@@ -112,6 +118,8 @@ body {
 
 .avatar span {
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .avatar span:hover {
