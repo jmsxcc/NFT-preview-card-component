@@ -26,14 +26,47 @@ body {
   border-radius: 1rem;
 }
 
-.card__img img {
+.card__img {
   width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
   border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.eth__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card__view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsl(178, 100%, 50%, 0.6);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card__view:hover {
+  opacity: 1;
 }
 
 .card__info h3 {
   color: hsl(0, 0%, 100%);
   margin: 1rem 0;
+  cursor: pointer;
+}
+
+.card__info h3:hover {
+  color: hsl(178, 100%, 50%);
 }
 
 .card__info p,
@@ -56,7 +89,7 @@ body {
   align-items: center;
 }
 
-.box span {
+.box .eth {
   color: hsl(178, 100%, 50%);
   font-weight: bold;
   margin-left: 0.5rem;
@@ -79,4 +112,8 @@ body {
 
 .avatar span {
   color: hsl(0, 0%, 100%);
+}
+
+.avatar span:hover {
+  color: hsl(178, 100%, 50%);
 }
