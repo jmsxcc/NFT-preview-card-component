@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  padding: 1.5rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+}
+
+.card__img img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card__info h3 {
+  color: hsl(0, 0%, 100%);
+  margin: 1rem 0;
+}
+
+.card__info p,
+.box .clock {
+  color: hsl(215, 51%, 70%);
+  font-weight: lighter;
+}
+
+.card__box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.box span {
+  color: hsl(178, 100%, 50%);
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  width: 35px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.avatar p {
+  margin-left: 1rem;
+}
+
+.avatar span {
+  color: hsl(0, 0%, 100%);
+}
